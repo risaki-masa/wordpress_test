@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ja">
-    <head prefix="og: http://ogp.me/ns#">
+    <head prefix="
+        og: http://ogp.me/ns# 
+        <?php HeaderUtils::show_page_type(); ?>: http://ogp.me/ns/<?php HeaderUtils::show_page_type(); ?>#
+    ">
         <meta charaset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php HeaderUtils::show_title(); ?></title>
