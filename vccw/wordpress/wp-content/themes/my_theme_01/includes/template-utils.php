@@ -20,4 +20,13 @@ final class TemplateUtils extends StaticClass
 
         return self::$directory_uri;
     }
+
+    /**
+     * ディレクトリのパスを取得
+     * @return string ディレクトリのパス
+     */
+    public static function get_directory_path() 
+    {
+        return TEMPLATEPATH;
+    }
 }
