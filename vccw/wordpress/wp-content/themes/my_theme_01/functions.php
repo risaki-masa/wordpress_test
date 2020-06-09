@@ -10,12 +10,12 @@ class StaticClass
 }
 
 /**
- * PHPファイルを読み込む
+ * PHPファイルを含める
  */
-function load_php_files() 
+function include_php_files() 
 {
     $paths = glob( TEMPLATEPATH.'/includes/*.php' );
     foreach ( $paths as $path ) require $path;
 }
 
-load_php_files();
+include_php_files();
