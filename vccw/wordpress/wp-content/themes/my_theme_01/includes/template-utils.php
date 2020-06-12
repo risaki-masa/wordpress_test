@@ -1,11 +1,11 @@
 <?php
 
 /**
- * テンプレートに関する汎用APIを管理するクラス
+ * テンプレートに関するAPIを管理するクラス
  */
 final class TemplateUtils extends StaticClass
 {
-    static $directory_uri = null;
+    private static $directory_uri = null;
 
     /**
      * ディレクトリURIを取得
@@ -28,5 +28,14 @@ final class TemplateUtils extends StaticClass
     public static function get_directory_path() 
     {
         return TEMPLATEPATH;
+    }
+
+    /**
+     * テンプレートパーツを含める
+     * @param $file_path ファイルパス
+     */
+    public static function include_part( $file_path ) 
+    {
+        require self::get_directory_path().$file_path;
     }
 }

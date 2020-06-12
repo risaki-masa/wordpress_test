@@ -1,6 +1,7 @@
-<?php HeaderUtils::show_header(); ?>
+<?php HeaderUtils::show(); ?>
 
-<body>
-    <p>あああ</p>
-</body>
-</html>
+<div id="main" role="main">
+    
+</div>
+
+<?php FooterUtils::show(); ?>

@@ -2,7 +2,7 @@
 
 
 /**
- * 外部ファイルに関する汎用APIを管理するクラス
+ * 外部ファイルに関するAPIを管理するクラス
  */
 final class ExternalFileUtils extends StaticClass 
 {

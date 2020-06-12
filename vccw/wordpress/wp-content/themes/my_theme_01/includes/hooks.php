@@ -1,5 +1,7 @@
 <?php
 
+add_action( 'after_setup_theme' , [ 'ThemeSupportUtils', 'add_supports' ] );
+
 add_filter( 'emoji_svg_url', '__return_empty_string' );
 
 remove_action( 'wp_head'            , 'wp_generator'                    );

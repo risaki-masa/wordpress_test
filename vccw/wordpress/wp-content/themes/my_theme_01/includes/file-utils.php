@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ファイルに関する汎用APIを管理するクラス
+ * ファイルに関するAPIを管理するクラス
  */
 final class FileUtils extends StaticClass 
 {
@@ -12,6 +12,4 @@ final class FileUtils extends StaticClass
     {
         return filemtime( TemplateUtils::get_directory_path().$file_path );
     }
-
-    
 }

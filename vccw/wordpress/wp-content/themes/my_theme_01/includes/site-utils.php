@@ -1,7 +1,7 @@
 <?php
 
 /**
- * サイトに関する汎用APIを管理するクラス
+ * サイトに関するAPIを管理するクラス
  */
 final class SiteUtils extends StaticClass 
 {
@@ -35,6 +35,14 @@ final class SiteUtils extends StaticClass
     {
         $uri = home_url();
         return esc_url( $uri );
+    }
+
+    /**
+     * ホームのURIを表示
+     */
+    public static function show_home_uri() 
+    {
+        echo self::get_home_uri();
     }
 
     /**
