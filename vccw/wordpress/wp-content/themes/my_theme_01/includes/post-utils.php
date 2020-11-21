@@ -14,6 +14,9 @@ final class PostUtils extends StaticClass
         return have_posts();
     }
 
+    /**
+     * 次の投稿を設定
+     */
     public static function set_next() 
     {
         the_post();
